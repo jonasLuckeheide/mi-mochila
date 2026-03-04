@@ -69,7 +69,7 @@ export default function Home() {
 
     return (
         <main className="min-h-screen bg-gray-50 p-8">
-            <div className="max-w-6xl mx-auto bg-white p-6 rounded-xl shadow-sm border">
+            <div className="max-w-6xl mx-auto bg-white p-6 rounded-xl shadow-sm border ">
                 <div className="mb-8 flex justify-between items-center">
                     <h1 className="text-3xl font-bold text-gray-800">🎒 Mi Mochila</h1>
                     <div className="flex gap-4">

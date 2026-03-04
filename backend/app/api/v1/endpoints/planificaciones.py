@@ -1,3 +1,4 @@
+from datetime import datetime
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
@@ -15,8 +16,12 @@ def read_planificaciones(session: Session = Depends(get_session)):
         return [
             Planificacion(
                 id=1,
-                titulo="Mi Primera Planificación",
-                año=2026,
+                nombre="Mi Primera Planificación",
+                descripcion="Una descripción detallada de la planificación inicial.",
+                objetivos="Objetivos de aprendizaje claros y medibles.",
+                contenidos="Contenidos curriculares a desarrollar.",
+                fecha_inicio=datetime(2026, 3, 1),
+                fecha_fin=datetime(2026, 3, 31),
                 tipo_planificacion=TipoPlanificacion.unidad,
                 campo_experiencia=CampoExperiencia.identidad,
                 edad_desde=3,
